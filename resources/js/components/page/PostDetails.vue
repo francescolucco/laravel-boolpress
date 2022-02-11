@@ -1,18 +1,26 @@
 <template>
-    <div class="container card">
-        <div class="match-title">Titolo</div>
-        <div class="date">Data</div>
+    <div class="container">
+        <div class="card">
+            <div class="match-title">{{ post.title }}</div>
+            <div class="date">{{ formatData }}</div>
 
-        <div class="category_tags">
-            <div class="category">categoria</div>
-            <div class="post_tags">
-                <div class="tags">tag</div>
+            <div class="category_tags">
+                <div class="category">{{ post.category.name }}</div>
+                <div class="post_tags">
+                    <div
+                        class="tags"
+                        v-for="(tag, index) in post.tags"
+                        :key="`tag${index}`"
+                    >
+                        {{ tag.name }}
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="description">
-            <strong>Cronaca della partita:</strong><br />
-            descrizione
+            <div class="description">
+                <strong>Cronaca della partita:</strong><br />
+                {{ post.description }}
+            </div>
         </div>
     </div>
 </template>
@@ -21,22 +29,48 @@
 export default {
     name: "PostDetails",
 
-    // computed: {
-    //     stringShrinkage() {
-    //         return this.post.description.substring(0, 140) + "...";
-    //     },
-    //     formatData() {
-    //         const d = new Date(this.post.created_at);
-    //         let day = d.getDate();
-    //         let month = d.getMonth();
-    //         let year = d.getFullYear();
-    //         if (day < 10) day = "0" + day;
-    //         if (month < 10) month = "0" + month;
-    //         return `${day}/${month}/${year}`;
-    //     },
-    // },
+    data() {
+        return {
+            slugPost: "",
+            apiUrl: "http://127.0.0.1:8000/api/posts/",
+            post: {
+                title: "",
+                date: "",
+                description: "",
+                category: {},
+                tags: [],
+            },
+        };
+    },
 
-    methods: {},
+    computed: {
+        // stringShrinkage() {
+        //     return this.post.description.substring(0, 40) + "...";
+        // },
+        formatData() {
+            const d = new Date(this.post.created_at);
+            let day = d.getDate();
+            let month = d.getMonth();
+            let year = d.getFullYear();
+            if (day < 10) day = "0" + day;
+            if (month < 10) month = "0" + month;
+            return `${day}/${month}/${year}`;
+        },
+    },
+
+    methods: {
+        getPostDetails() {
+            axios.get(this.apiUrl + this.slugPost).then((res) => {
+                this.post = res.data;
+                console.log(this.post);
+            });
+        },
+    },
+    mounted() {
+        this.slugPost = this.$route.params.slug;
+        console.log(this.$route.params.slug);
+        this.getPostDetails();
+    },
 };
 </script>
 

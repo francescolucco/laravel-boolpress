@@ -2109,23 +2109,58 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "PostDetails",
-  // computed: {
-  //     stringShrinkage() {
-  //         return this.post.description.substring(0, 140) + "...";
-  //     },
-  //     formatData() {
-  //         const d = new Date(this.post.created_at);
-  //         let day = d.getDate();
-  //         let month = d.getMonth();
-  //         let year = d.getFullYear();
-  //         if (day < 10) day = "0" + day;
-  //         if (month < 10) month = "0" + month;
-  //         return `${day}/${month}/${year}`;
-  //     },
-  // },
-  methods: {}
+  data: function data() {
+    return {
+      slugPost: "",
+      apiUrl: "http://127.0.0.1:8000/api/posts/",
+      post: {
+        title: "",
+        date: "",
+        description: "",
+        category: {},
+        tags: []
+      }
+    };
+  },
+  computed: {
+    // stringShrinkage() {
+    //     return this.post.description.substring(0, 40) + "...";
+    // },
+    formatData: function formatData() {
+      var d = new Date(this.post.created_at);
+      var day = d.getDate();
+      var month = d.getMonth();
+      var year = d.getFullYear();
+      if (day < 10) day = "0" + day;
+      if (month < 10) month = "0" + month;
+      return "".concat(day, "/").concat(month, "/").concat(year);
+    }
+  },
+  methods: {
+    getPostDetails: function getPostDetails() {
+      var _this = this;
+
+      axios.get(this.apiUrl + this.slugPost).then(function (res) {
+        _this.post = res.data;
+        console.log(_this.post);
+      });
+    }
+  },
+  mounted: function mounted() {
+    this.slugPost = this.$route.params.slug;
+    console.log(this.$route.params.slug);
+    this.getPostDetails();
+  }
 });
 
 /***/ }),
@@ -4170,34 +4205,44 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container card" }, [
-      _c("div", { staticClass: "match-title" }, [_vm._v("Titolo")]),
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "match-title" }, [
+        _vm._v(_vm._s(_vm.post.title)),
+      ]),
       _vm._v(" "),
-      _c("div", { staticClass: "date" }, [_vm._v("Data")]),
+      _c("div", { staticClass: "date" }, [_vm._v(_vm._s(_vm.formatData))]),
       _vm._v(" "),
       _c("div", { staticClass: "category_tags" }, [
-        _c("div", { staticClass: "category" }, [_vm._v("categoria")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "post_tags" }, [
-          _c("div", { staticClass: "tags" }, [_vm._v("tag")]),
+        _c("div", { staticClass: "category" }, [
+          _vm._v(_vm._s(_vm.post.category.name)),
         ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "post_tags" },
+          _vm._l(_vm.post.tags, function (tag, index) {
+            return _c("div", { key: "tag" + index, staticClass: "tags" }, [
+              _vm._v(
+                "\n                    " +
+                  _vm._s(tag.name) +
+                  "\n                "
+              ),
+            ])
+          }),
+          0
+        ),
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "description" }, [
         _c("strong", [_vm._v("Cronaca della partita:")]),
         _c("br"),
-        _vm._v("\n        descrizione\n    "),
+        _vm._v("\n            " + _vm._s(_vm.post.description) + "\n        "),
       ]),
-    ])
-  },
-]
+    ]),
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
