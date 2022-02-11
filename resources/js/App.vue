@@ -4,8 +4,9 @@
     <Header/>
 
 
+<!-- 7 inietto i componenti su cui devono atterrare le rotte del VueRouter. Lo posso fare tramite il seguente tag-->
+    <router-link></router-link>
 
-      <Posts/>
 
 
 
@@ -18,15 +19,14 @@
 
 import Header from './components/partials/Header.vue'
 import Footer from './components/partials/Footer.vue'
-import Posts from './components/page/Posts.vue'
+
 
 export default {
     name: 'App',
 
     components:{
       Header,
-      Footer,
-      Posts
+      Footer
     }
 
 }
