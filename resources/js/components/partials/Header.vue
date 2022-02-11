@@ -4,22 +4,24 @@
      <nav>
         <ul>
            <li>
-              <a href="#">News</a>
+              <!--8 per atterrare nei componenti Vue attraverso un link non utilizziamo il tag <a/> ma il tag <router-link></router-link> -->
+              <!--9 per farlo funzionare gli si scrive dopo il tag di apertura quello che vogliamo veder in pagina, poi :to="", gli si passa un oggetto {}, questo oggetto deve aver il name, e il name deve essere lo stesso che abbiamo assegnato nella chiave name dentro il file routes.js -->
+               <router-link :to="{name: 'home'}">HOME</router-link>
            </li>
            <li>
-              <a class="active" href="#">Squadra</a>
+               <router-link :to="{name: 'about'}">SQUADRA</router-link>
            </li>
            <li>
-              <a href="#">Tifosi</a>
+               <router-link :to="{name: 'club'}">CLUB</router-link>
            </li>
            <li>
-              <a href="#">Stadio</a>
+               <router-link :to="{name: 'fans'}">TIFOSERIA</router-link>
            </li>
            <li>
-              <a href="#">Club</a>
+               <router-link :to="{name: 'stadium'}">STADIO</router-link>
            </li>
            <li>
-              <a href="#">Contatti</a>
+               <router-link :to="{name: 'contacts'}">CONTATTI</router-link>
            </li>
         </ul>
      </nav>

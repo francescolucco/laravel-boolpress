@@ -1,5 +1,5 @@
 <template>
-  <main class="container">
+  <main>
 
      <Posts/>
 
@@ -22,7 +22,8 @@ export default {
 
 <style lang='scss' scoped>
 main{
-   margin-top: 180px;
+    padding: 130px 0 50px 0;
+    min-height: calc(100vh + 80px);
 }
 
 </style>

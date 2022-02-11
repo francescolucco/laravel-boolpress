@@ -19,7 +19,7 @@ export default {
 
 <style lang='scss' scoped>
 main{
-   margin-top: 180px;
+   padding-top: 180px;
 }
 
 </style>

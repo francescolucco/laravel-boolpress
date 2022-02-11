@@ -4,8 +4,9 @@
     <Header/>
 
 
-<!-- 7 inietto i componenti su cui devono atterrare le rotte del VueRouter. Lo posso fare tramite il seguente tag-->
-    <router-link></router-link>
+<!-- 7 inietto i componenti su cui devono atterrare le rotte del VueRouter. Lo posso fare tramite il seguente tag
+ATTENZIONE!! NON router-link MA router-view!!!!!! A volte suggerisce male-->
+    <router-view></router-view>
 
 
 

@@ -1,6 +1,5 @@
 <template>
-    <main>
-        <div class="container">
+        <div class="container container-posts">
             <h1>HELLAS VERONA</h1>
             <div v-if="posts">
                 <PostItem
@@ -46,7 +45,6 @@
                 <h3>Errore: Pagina non trovata</h3>
             </div>
         </div>
-    </main>
 </template>
 
 <script>
@@ -100,10 +98,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main {
-    padding: 130px 0 50px 0;
-    background-color: yellow;
-    min-height: calc(100vh + 80px);
+.container-posts {
+
     h1 {
         text-align: center;
         font-size: 40px;
@@ -138,7 +134,7 @@ main {
         left: 0;
         height: 100%;
         width: 100%;
-        background: yellow;
+        // background: yellow;
         filter: alpha(opacity=80);
         -moz-opacity: 0.8;
         -khtml-opacity: 0.8;
@@ -148,7 +144,8 @@ main {
         justify-content: center;
     }
     .loader {
-        border: 16px solid #f3f3f3;
+        border: 16px solid yellow;
+        // border: 16px solid #f3f3f3;
         border-top: 16px solid rgba(1, 46, 113, 255);
         border-radius: 50%;
         width: 150px;

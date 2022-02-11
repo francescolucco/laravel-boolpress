@@ -1927,6 +1927,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2199,8 +2200,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Posts",
@@ -2335,6 +2334,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Header'
 });
@@ -2353,7 +2354,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "main[data-v-605dd410] {\n  margin-top: 180px;\n}", ""]);
+exports.push([module.i, "main[data-v-605dd410] {\n  padding-top: 180px;\n}", ""]);
 
 // exports
 
@@ -2372,7 +2373,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "main[data-v-118fa79b] {\n  margin-top: 180px;\n}", ""]);
+exports.push([module.i, "main[data-v-118fa79b] {\n  padding-top: 180px;\n}", ""]);
 
 // exports
 
@@ -2391,7 +2392,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "main[data-v-2d54de38] {\n  margin-top: 180px;\n}", ""]);
+exports.push([module.i, "main[data-v-2d54de38] {\n  padding-top: 180px;\n}", ""]);
 
 // exports
 
@@ -2410,7 +2411,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "main[data-v-0f6774b6] {\n  margin-top: 180px;\n}", ""]);
+exports.push([module.i, "main[data-v-0f6774b6] {\n  padding-top: 180px;\n}", ""]);
 
 // exports
 
@@ -2429,7 +2430,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "main[data-v-aba88978] {\n  margin-top: 180px;\n}", ""]);
+exports.push([module.i, "main[data-v-aba88978] {\n  padding: 130px 0 50px 0;\n  min-height: calc(100vh + 80px);\n}", ""]);
 
 // exports
 
@@ -2467,7 +2468,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "main[data-v-cfce4984] {\n  padding: 130px 0 50px 0;\n  background-color: yellow;\n  min-height: calc(100vh + 80px);\n}\nmain h1[data-v-cfce4984] {\n  text-align: center;\n  font-size: 40px;\n  color: #012e71;\n}\nmain .button[data-v-cfce4984] {\n  display: flex;\n  justify-content: space-between;\n}\nmain .button button[data-v-cfce4984] {\n  padding: 6px;\n  border-radius: 5px;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  background-color: #012e71;\n  color: yellow;\n  font-weight: bold;\n}\nmain .button button.active[data-v-cfce4984] {\n  background-color: yellow;\n  color: #012e71;\n}\nmain .guscioloader[data-v-cfce4984] {\n  font-size: 1.6em;\n  color: #012e71;\n  font-weight: bold;\n  display: none;\n  position: fixed;\n  z-index: 1000;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  background: yellow;\n  filter: alpha(opacity=80);\n  -moz-opacity: 0.8;\n  -khtml-opacity: 0.8;\n  opacity: 0.8;\n  text-align: center;\n  align-items: center;\n  justify-content: center;\n}\nmain .loader[data-v-cfce4984] {\n  border: 16px solid #f3f3f3;\n  border-top: 16px solid #012e71;\n  border-radius: 50%;\n  width: 150px;\n  height: 150px;\n  -webkit-animation: spin-data-v-cfce4984 2s linear infinite;\n          animation: spin-data-v-cfce4984 2s linear infinite;\n}\n@-webkit-keyframes spin-data-v-cfce4984 {\n0% {\n    transform: rotate(0deg);\n}\n100% {\n    transform: rotate(360deg);\n}\n}\n@keyframes spin-data-v-cfce4984 {\n0% {\n    transform: rotate(0deg);\n}\n100% {\n    transform: rotate(360deg);\n}\n}", ""]);
+exports.push([module.i, ".container-posts h1[data-v-cfce4984] {\n  text-align: center;\n  font-size: 40px;\n  color: #012e71;\n}\n.container-posts .button[data-v-cfce4984] {\n  display: flex;\n  justify-content: space-between;\n}\n.container-posts .button button[data-v-cfce4984] {\n  padding: 6px;\n  border-radius: 5px;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  background-color: #012e71;\n  color: yellow;\n  font-weight: bold;\n}\n.container-posts .button button.active[data-v-cfce4984] {\n  background-color: yellow;\n  color: #012e71;\n}\n.container-posts .guscioloader[data-v-cfce4984] {\n  font-size: 1.6em;\n  color: #012e71;\n  font-weight: bold;\n  display: none;\n  position: fixed;\n  z-index: 1000;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  filter: alpha(opacity=80);\n  -moz-opacity: 0.8;\n  -khtml-opacity: 0.8;\n  opacity: 0.8;\n  text-align: center;\n  align-items: center;\n  justify-content: center;\n}\n.container-posts .loader[data-v-cfce4984] {\n  border: 16px solid yellow;\n  border-top: 16px solid #012e71;\n  border-radius: 50%;\n  width: 150px;\n  height: 150px;\n  -webkit-animation: spin-data-v-cfce4984 2s linear infinite;\n          animation: spin-data-v-cfce4984 2s linear infinite;\n}\n@-webkit-keyframes spin-data-v-cfce4984 {\n0% {\n    transform: rotate(0deg);\n}\n100% {\n    transform: rotate(360deg);\n}\n}\n@keyframes spin-data-v-cfce4984 {\n0% {\n    transform: rotate(0deg);\n}\n100% {\n    transform: rotate(360deg);\n}\n}", ""]);
 
 // exports
 
@@ -2486,7 +2487,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "main[data-v-13d6a4b0] {\n  margin-top: 180px;\n}", ""]);
+exports.push([module.i, "main[data-v-13d6a4b0] {\n  padding-top: 180px;\n}", ""]);
 
 // exports
 
@@ -3863,7 +3864,7 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    [_c("Header"), _vm._v(" "), _c("router-link"), _vm._v(" "), _c("Footer")],
+    [_c("Header"), _vm._v(" "), _c("router-view"), _vm._v(" "), _c("Footer")],
     1
   )
 }
@@ -4045,7 +4046,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("main", { staticClass: "container" }, [_c("Posts")], 1)
+  return _c("main", [_c("Posts")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -4136,99 +4137,94 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("main", [
-    _c("div", { staticClass: "container" }, [
-      _c("h1", [_vm._v("HELLAS VERONA")]),
-      _vm._v(" "),
-      _vm.posts
-        ? _c(
-            "div",
-            [
-              _vm._l(_vm.posts, function (post) {
-                return _c("PostItem", {
-                  key: "postItame" + post.id,
-                  attrs: { post: post },
-                })
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "button" },
-                [
-                  _c(
+  return _c("div", { staticClass: "container container-posts" }, [
+    _c("h1", [_vm._v("HELLAS VERONA")]),
+    _vm._v(" "),
+    _vm.posts
+      ? _c(
+          "div",
+          [
+            _vm._l(_vm.posts, function (post) {
+              return _c("PostItem", {
+                key: "postItame" + post.id,
+                attrs: { post: post },
+              })
+            }),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "button" },
+              [
+                _c(
+                  "button",
+                  {
+                    attrs: { disabled: _vm.pagination.current === 1 },
+                    on: {
+                      click: function ($event) {
+                        return _vm.getPosts(_vm.pagination.current - 1)
+                      },
+                    },
+                  },
+                  [_vm._v("\n                Back\n            ")]
+                ),
+                _vm._v(" "),
+                _vm._l(_vm.pagination.last, function (i) {
+                  return _c(
                     "button",
                     {
-                      attrs: { disabled: _vm.pagination.current === 1 },
+                      key: "button" + i,
+                      class: _vm.pagination.current === i ? "active" : "",
+                      attrs: { disabled: _vm.pagination.current === i },
                       on: {
                         click: function ($event) {
-                          return _vm.getPosts(_vm.pagination.current - 1)
+                          return _vm.getPosts(i)
                         },
                       },
                     },
-                    [_vm._v("\n                    Back\n                ")]
-                  ),
-                  _vm._v(" "),
-                  _vm._l(_vm.pagination.last, function (i) {
-                    return _c(
-                      "button",
-                      {
-                        key: "button" + i,
-                        class: _vm.pagination.current === i ? "active" : "",
-                        attrs: { disabled: _vm.pagination.current === i },
-                        on: {
-                          click: function ($event) {
-                            return _vm.getPosts(i)
-                          },
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "\n                    " +
-                            _vm._s(i) +
-                            "\n                "
-                        ),
-                      ]
-                    )
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      attrs: {
-                        disabled:
-                          _vm.pagination.current === _vm.pagination.last,
-                      },
-                      on: {
-                        click: function ($event) {
-                          return _vm.getPosts(_vm.pagination.current + 1)
-                        },
+                    [
+                      _vm._v(
+                        "\n                " + _vm._s(i) + "\n            "
+                      ),
+                    ]
+                  )
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    attrs: {
+                      disabled: _vm.pagination.current === _vm.pagination.last,
+                    },
+                    on: {
+                      click: function ($event) {
+                        return _vm.getPosts(_vm.pagination.current + 1)
                       },
                     },
-                    [_vm._v("\n                    Back\n                ")]
-                  ),
-                ],
-                2
-              ),
-            ],
-            2
-          )
-        : _c("div", { staticClass: "loading" }, [_vm._m(0)]),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.apiFailed,
-              expression: "apiFailed",
-            },
+                  },
+                  [_vm._v("\n                Back\n            ")]
+                ),
+              ],
+              2
+            ),
           ],
-        },
-        [_c("h3", [_vm._v("Errore: Pagina non trovata")])]
-      ),
-    ]),
+          2
+        )
+      : _c("div", { staticClass: "loading" }, [_vm._m(0)]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.apiFailed,
+            expression: "apiFailed",
+          },
+        ],
+      },
+      [_c("h3", [_vm._v("Errore: Pagina non trovata")])]
+    ),
   ])
 }
 var staticRenderFns = [
@@ -4246,7 +4242,7 @@ var staticRenderFns = [
           _c("br"),
           _vm._v(" HELLA VERONA "),
           _c("br"),
-          _vm._v("Loading...\n                "),
+          _vm._v("Loading...\n            "),
         ]
       ),
       _vm._v(" "),
@@ -4338,50 +4334,87 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("header", [
-      _c("img", {
-        attrs: {
-          src: __webpack_require__(/*! ../../../img/Logo_flat-e1618850991633.jpg */ "./resources/img/Logo_flat-e1618850991633.jpg"),
-          alt: "",
-        },
-      }),
-      _vm._v(" "),
-      _c("nav", [
-        _c("ul", [
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("News")])]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { staticClass: "active", attrs: { href: "#" } }, [
-              _vm._v("Squadra"),
+  return _c("header", [
+    _c("img", {
+      attrs: {
+        src: __webpack_require__(/*! ../../../img/Logo_flat-e1618850991633.jpg */ "./resources/img/Logo_flat-e1618850991633.jpg"),
+        alt: "",
+      },
+    }),
+    _vm._v(" "),
+    _c("nav", [
+      _c("ul", [
+        _c(
+          "li",
+          [
+            _c("router-link", { attrs: { to: { name: "home" } } }, [
+              _vm._v("HOME"),
             ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Tifosi")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Stadio")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Club")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Contatti")])]),
-        ]),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          [
+            _c("router-link", { attrs: { to: { name: "about" } } }, [
+              _vm._v("SQUADRA"),
+            ]),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          [
+            _c("router-link", { attrs: { to: { name: "club" } } }, [
+              _vm._v("CLUB"),
+            ]),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          [
+            _c("router-link", { attrs: { to: { name: "fans" } } }, [
+              _vm._v("TIFOSERIA"),
+            ]),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          [
+            _c("router-link", { attrs: { to: { name: "stadium" } } }, [
+              _vm._v("STADIO"),
+            ]),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          [
+            _c("router-link", { attrs: { to: { name: "contacts" } } }, [
+              _vm._v("CONTATTI"),
+            ]),
+          ],
+          1
+        ),
       ]),
-      _vm._v(" "),
-      _c("img", {
-        attrs: {
-          src: __webpack_require__(/*! ../../../img/Logo_flat-e1618850991633.jpg */ "./resources/img/Logo_flat-e1618850991633.jpg"),
-          alt: "",
-        },
-      }),
-    ])
-  },
-]
+    ]),
+    _vm._v(" "),
+    _c("img", {
+      attrs: {
+        src: __webpack_require__(/*! ../../../img/Logo_flat-e1618850991633.jpg */ "./resources/img/Logo_flat-e1618850991633.jpg"),
+        alt: "",
+      },
+    }),
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -20197,32 +20230,34 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   // 2 // la VueRouter contiene un oggetto ceh avrà una serie di proprietà e avrà tutte le nostre rotte
   // §per prima cosa gli diciamo che il nostro router deve essere in relazione alla history del browser, ossia in una memoria del browser in modo tale che si possa andare avanti/indietro con le pagine 
   mode: 'history',
+  // 9 se voglio customizzare il nome della classe che di default vuerouter assegna al link attivo del menu che corrisponde al componente su cui si sta atterrando, devo utlizziare la proprietà linkExactActiveClass per assegnargli un nuovo nome (magari perchè nei css ho già impostato tutto utlizzando semplicemnte la parola active)
+  linkExactActiveClass: 'active',
   // 6  routes è un array di oggetti, e ogni oggetto è una rotta.
   // le parole chiave di ogni signola rotta sono il path, il name, il componente.
   routes: [{
     path: '/',
     name: 'home',
-    component: 'Home'
+    component: _components_page_Home__WEBPACK_IMPORTED_MODULE_2__["default"]
   }, {
     path: '/chi-siamo',
     name: 'about',
-    component: 'About'
+    component: _components_page_About__WEBPACK_IMPORTED_MODULE_3__["default"]
   }, {
-    path: '/la-società',
+    path: '/la-societa',
     name: 'club',
-    component: 'Club'
+    component: _components_page_Club__WEBPACK_IMPORTED_MODULE_4__["default"]
   }, {
     path: '/contatti',
     name: 'contacts',
-    component: 'Contacts'
+    component: _components_page_Contacts__WEBPACK_IMPORTED_MODULE_5__["default"]
   }, {
     path: '/stadio',
     name: 'stadium',
-    component: 'Stadium'
+    component: _components_page_Stadium__WEBPACK_IMPORTED_MODULE_6__["default"]
   }, {
     path: '/tifoseria',
     name: 'fans',
-    component: 'Fans'
+    component: _components_page_Fans__WEBPACK_IMPORTED_MODULE_7__["default"]
   }]
 }); // 3 come tutti i file javascript, anche questo file ha bisogno di un export per poter essere trasferito-->inseriamo quindi in  fondo alla pagina la dicitura export default router (è proprio una regola javascript: se voglio poter importare una classe esternamente, da un altro file, il file precente deve aver l'export default )
 
