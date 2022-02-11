@@ -16,6 +16,7 @@ import Club from './components/page/Club';
 import Contacts from './components/page/Contacts';
 import Stadium from './components/page/Stadium';
 import Fans from './components/page/Fans';
+import PostDetails from './components/page/PostDetails';
 
 
 const router = new VueRouter({
@@ -58,6 +59,12 @@ const router = new VueRouter({
          path: '/tifoseria',
          name: 'fans',
          component: Fans
+      },
+      // creaiamo una rotta che si chiamerà details e gli passiamo il parametro slug con i due punti sappiamo essere un dato dinamico, è l'equivalente delle graffe in blade
+      {
+         path: '/details/:slug',
+         name: 'postDetails',
+         component: PostDetails
       },
    ]
    

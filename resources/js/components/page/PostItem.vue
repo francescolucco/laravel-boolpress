@@ -1,6 +1,8 @@
 <template>
     <div class="card">
-        <div class="match-title">{{ post.id }}) {{ post.title }}</div>
+        <!-- <a class="match-title">{{ post.id }}) {{ post.title }}</a>
+        ricordiamoci che name dentro router-link è un oggetto. Dopo aver inserito il name metto quindi la virgola (perchè è un oggetto) passo la proprietà params, la quale a sua volta è un oggetto :{} con i parameteri che io gli passo (possono essere più di uno), in questo caso passo lo slug che corrisponde a post.slug -->
+        <router-link  class="match-title" :to="{name: 'postDetails', params:{slug: post.slug} }">{{ post.id }}) {{ post.title }}</router-link>
         <div class="date">Data del match: {{ formatData }}</div>
 
         <div class="category_tags">
@@ -59,7 +61,7 @@ export default {
     border: 2px solid rgba(0, 46, 113, 0);
     &:hover {
         color: rgba(1, 46, 113, 255);
-        border: 2px solid rgba(1, 46, 113, 255);
+        border: 2px solid  rgb(109, 107, 5);
         cursor: pointer;
     }
     .match-title {
@@ -67,6 +69,11 @@ export default {
         font-size: 20px;
         font-weight: bold;
         padding-bottom: 5px;
+        text-decoration: none;
+        color: rgba(1, 46, 113, 255);
+        &:hover{
+            color: rgb(109, 107, 5);
+        }
     }
     .date {
         font-size: 12px;

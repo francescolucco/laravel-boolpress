@@ -14,4 +14,13 @@ class PostsController extends Controller
 
         return response()->json($posts);
     }
+
+
+    // 10 generazione json del singolo post in base allo slug
+    public function show($slug){
+
+        $post = Post::where('slug', $slug)->with(['category', 'tags'])->first();
+        
+        return response()->json($post);
+    }
 }
