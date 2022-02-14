@@ -59,6 +59,7 @@ export default {
     padding: 15px;
     border-radius: 5px;
     border: 2px solid rgba(0, 46, 113, 0);
+    margin-right: 25px;
     &:hover {
         color: rgba(1, 46, 113, 255);
         border: 2px solid  rgb(109, 107, 5);

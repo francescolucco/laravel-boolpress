@@ -37346,9 +37346,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\franc\Documents\Francesco\BOOLEAN\Esercizi\LARAVEL\Nuova cartella\laravel-boolpress\resources\js\admin.js */"./resources/js/admin.js");
-__webpack_require__(/*! C:\Users\franc\Documents\Francesco\BOOLEAN\Esercizi\LARAVEL\Nuova cartella\laravel-boolpress\resources\sass\admin\style.scss */"./resources/sass/admin/style.scss");
-module.exports = __webpack_require__(/*! C:\Users\franc\Documents\Francesco\BOOLEAN\Esercizi\LARAVEL\Nuova cartella\laravel-boolpress\resources\sass\guest\style.scss */"./resources/sass/guest/style.scss");
+__webpack_require__(/*! C:\Users\franc\Documents\Francesco\BOOLEAN\Esercizi\LARAVEL\laravel-boolpress\resources\js\admin.js */"./resources/js/admin.js");
+__webpack_require__(/*! C:\Users\franc\Documents\Francesco\BOOLEAN\Esercizi\LARAVEL\laravel-boolpress\resources\sass\admin\style.scss */"./resources/sass/admin/style.scss");
+module.exports = __webpack_require__(/*! C:\Users\franc\Documents\Francesco\BOOLEAN\Esercizi\LARAVEL\laravel-boolpress\resources\sass\guest\style.scss */"./resources/sass/guest/style.scss");
 
 
 /***/ })

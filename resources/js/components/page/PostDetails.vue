@@ -21,6 +21,7 @@
                 <strong>Cronaca della partita:</strong><br />
                 {{ post.description }}
             </div>
+            <span><router-link :to="{name: 'home'}">Torna ai post</router-link></span>
         </div>
     </div>
 </template>
@@ -126,6 +127,23 @@ export default {
                     background-color: rgba(1, 46, 113, 255);
                     color: yellow;
                 }
+            }
+        }
+        span {
+            margin-top: 20px;
+            padding: 5px 10px;
+            border-radius: 15px;
+            background-color: rgb(255, 0, 0);
+            color: rgb(245, 245, 253);
+            display: inline-block;
+            margin-bottom: 7px;
+            &:hover {
+                cursor: pointer;
+                background-color: goldenrod;
+            }
+            a{
+                color: white;
+                text-decoration: none;
             }
         }
     }

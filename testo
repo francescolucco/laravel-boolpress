@@ -1,0 +1,7 @@
+1. Creare i compontenti dei bottoni con dati fittizi
+2. Modificare la chiamata API in index inserendo tags e categorie
+3. Generiamo di due componenti a cui i dati sono scesi tramite props
+4. Generiamo con dei cicli i bottoni tag e categorie
+5. Creazione API getPostTag e getPostCategory, passandogli lo slug
+6. Evento $emit dal bottone categoria/tag che scatena la chiamata API in Post.vue
+7. Stampare le info di ost dall'API
