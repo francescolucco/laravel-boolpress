@@ -1962,8 +1962,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'About'
+  name: "About"
 });
 
 /***/ }),
@@ -2558,7 +2564,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "main[data-v-605dd410] {\n  padding-top: 180px;\n}", ""]);
+exports.push([module.i, "main[data-v-605dd410] {\n  padding-top: 180px;\n}\nmain video[data-v-605dd410] {\n  min-width: 100%;\n  min-height: 100%;\n  width: auto;\n  height: auto;\n  z-index: -100;\n  visibility: visible;\n  border: 10px solid black;\n}", ""]);
 
 // exports
 
@@ -4200,11 +4206,20 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("main", { staticClass: "container" }, [
+      _c("video", [
+        _c("source", {
+          attrs: {
+            src: "{asset ('/public/images/video.webm')}",
+            type: "video/webm",
+          },
+        }),
+      ]),
+      _vm._v(" "),
       _c("h1", [_vm._v("ABOUT")]),
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "\n      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, nam. Eos deserunt non, est magnam, corporis deleniti sapiente tenetur quo id enim odit earum officia aspernatur dicta, quos in alias. \n   "
+          "\n        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,\n        nam. Eos deserunt non, est magnam, corporis deleniti sapiente\n        tenetur quo id enim odit earum officia aspernatur dicta, quos in\n        alias.\n    "
         ),
       ]),
     ])
@@ -4881,11 +4896,11 @@ var render = function () {
       _c(
         "div",
         { staticClass: "tag" },
-        _vm._l(_vm.tags, function (tag) {
+        _vm._l(_vm.tags, function (tag, index) {
           return _c(
             "span",
             {
-              key: "tag" + tag.id,
+              key: "tag" + index,
               on: {
                 click: function ($event) {
                   return _vm.$emit("getPostsTag", tag.slug)

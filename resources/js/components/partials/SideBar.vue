@@ -15,8 +15,8 @@
             <h2>Tags</h2>
             <div class="tag">
                 <span
-                    v-for="tag in tags"
-                    :key="`tag${tag.id}`"
+                    v-for="(tag, index) in tags"
+                    :key="`tag${index}`"
                     @click="$emit('getPostsTag', tag.slug)"
                     >{{ tag.name }}</span
                 >
